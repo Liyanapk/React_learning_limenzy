@@ -55,59 +55,67 @@
 
 
 
-import { useState } from "react";
-
-
-const image={
-    imageUrl:'https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg',
-
-}
-
-
-export const MyButton =()=>{
 
 
 
-    const [count,setCount]=useState(0);
+// import { useState } from "react";
 
-    function handleIncrement(){
-        setCount(count + 1)
-    }
-    const [countMinus,setcountMinus]=useState(0);
 
-    function handleDecrement(){
-        setcountMinus(count - 1)
-    }
+// const image={
+//     imageUrl:'https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg',
 
-    return(
-       <div>
+// }
 
-        <img
-        src={image.imageUrl}
-        alt="carrot"
-        style={
-            {
-                width:200,
-                height:200,
-                paddingTop:30,
-                borderRadius:10, 
+
+// export const MyButton =()=>{
+
+
+
+//     const [count,setCount]=useState(0);
+
+//     function handleIncrement(){
+//         setCount(count + 1)
+//     }
+    
+
+//     function handleDecrement(){
+//         setCount(count - 1)
+//         if(count<=0){
+//            setCount(0)
+//         }
+//     }
+
+//     return(
+//        <div>
+
+//         <img
+//         src={image.imageUrl}
+//         alt="carrot"
+//         style={
+//             {
+//                 width:200,
+//                 height:200,
+//                 paddingTop:30,
+//                 borderRadius:10, 
             
 
-            }
-        }
+//             }
+//         }
         
-        ></img>
+//         ></img>
 
-         <div style={{display:"flex",justifyContent:"center"}}>
-        <button onClick={handleIncrement} style={{}}> +{count} </button>
-        <button onClick={handleDecrement} style={{}}>-{countMinus} </button>
+//          <div style={{display:"flex",justifyContent:"center"}}>
+//          <button onClick={handleDecrement} style={{}}>- </button>
+//         {count}
+//         <button onClick={handleIncrement} style={{}}> + </button>
+        
    
-        </div>
+//         </div>
         
 
-       </div>
+//        </div>
         
        
 
-    )
-}
+//     )
+// }
